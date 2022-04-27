@@ -1,0 +1,17 @@
+
+# Remote plans
+
+/grep:
+    plan:
+        url: https://src.fedoraproject.org/rpms/grep
+        name: /plans/all
+
+/httpd:
+    plan:
+        url: https://src.fedoraproject.org/rpms/httpd
+        name: /plans/tier1-public
+
+/lftp:
+    plan:
+        url: https://src.fedoraproject.org/rpms/lftp
+        name: /ci

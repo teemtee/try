@@ -1,0 +1,15 @@
+
+# Multiple discover configs
+
+discover:
+  - name: grep
+    how: fmf
+    url: https://src.fedoraproject.org/tests/grep
+  - name: httpd
+    how: fmf
+    url: https://src.fedoraproject.org/tests/httpd
+  - name: lftp
+    how: fmf
+    url: https://src.fedoraproject.org/tests/lftp
+execute:
+    how: tmt

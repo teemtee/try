@@ -1,0 +1,18 @@
+
+# Separate plan for each component
+
+execute:
+    how: tmt
+
+/grep:
+    discover:
+        how: fmf
+        url: https://src.fedoraproject.org/tests/grep
+/httpd:
+    discover:
+        how: fmf
+        url: https://src.fedoraproject.org/tests/httpd
+/lftp:
+    discover:
+        how: fmf
+        url: https://src.fedoraproject.org/tests/lftp
