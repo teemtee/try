@@ -8,11 +8,14 @@ execute:
     discover:
         how: fmf
         url: https://src.fedoraproject.org/tests/grep
+        filter: tier:1
 /httpd:
     discover:
         how: fmf
         url: https://src.fedoraproject.org/tests/httpd
+        filter: tier:1
 /lftp:
     discover:
         how: fmf
         url: https://src.fedoraproject.org/tests/lftp
+        filter: tier:1

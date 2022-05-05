@@ -1,0 +1,37 @@
+
+# Combine referencing tests/plans & internal/public
+
+execute:
+    how: tmt
+
+# Common preparation stuff
+prepare:
+  - how: shell
+    script: echo apply tier workarounds
+  - how: ansible
+    playbook: buildroot.yaml
+
+# Fetch tests from a single tests repository
+/grep:
+    discover:
+        how: fmf
+        url: https://src.fedoraproject.org/tests/grep
+        filter: tier:1
+
+# Combine both internal and public tests
+/httpd:
+    discover:
+      - name: public
+        how: fmf
+        url: https://src.fedoraproject.org/tests/httpd
+        filter: tier:1
+      - name: internal
+        how: fmf
+        url: git://pkgs.devel.redhat.com/tests/httpd
+        filter: tier:1
+
+# Reference a remote plan
+/php:
+    plan:
+        url: git://pkgs.devel.redhat.com/tests/php
+        name: /plans/module

@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# Simple loop through git repositories
 
 components="grep httpd lftp"
 
@@ -8,7 +10,7 @@ pushd $tmp
 for component in $components; do
     git clone --depth 1 "https://src.fedoraproject.org/tests/$component"
     pushd $component
-    tmt run discover -v
+    tmt run discover -v test --filter tier:1
     popd
 done
 

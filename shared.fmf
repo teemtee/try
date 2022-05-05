@@ -1,0 +1,20 @@
+
+# Multiple components in a shared git repository
+
+execute:
+    how: tmt
+
+prepare:
+    how: shell
+    script: echo apply tier workarounds
+
+/checkpolicy:
+    discover:
+        how: fmf
+        url: https://src.fedoraproject.org/tests/selinux
+        filter: tier:$LEVEL & component:checkpolicy
+/libsemanage:
+    discover:
+        how: fmf
+        url: https://src.fedoraproject.org/tests/selinux
+        filter: tier:$LEVEL & component:libsemanage

@@ -1,0 +1,40 @@
+
+# Run tests which need the buildroot separately
+#
+# tmt --context buildroot=true run --environment FILTER='tier:1 & tag:buildroot'
+# tmt --context buildroot=false run --environment FILTER='tier:1 & tag:-buildroot'
+
+# Common setup
+
+execute:
+    how: tmt
+
+prepare:
+  - how: shell
+    script: echo apply tier workarounds
+
+# Component plans
+
+/grep:
+    discover:
+        how: fmf
+        url: https://src.fedoraproject.org/tests/grep
+        filter: $FILTER
+/httpd:
+    discover:
+        how: fmf
+        url: https://src.fedoraproject.org/tests/httpd
+        filter: tier:1
+/lftp:
+    discover:
+        how: fmf
+        url: https://src.fedoraproject.org/tests/lftp
+        filter: $FILTER
+
+# Optionally enable the buildroot
+
+adjust:
+    prepare+:
+      - how: ansible
+        playbook: buildroot.yaml
+    when: buildroot == true
