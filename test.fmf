@@ -1,0 +1,5 @@
+test: |
+    cd /tmp
+    systemctl start libvirtd
+    tmt run -avvvddd execute --how tmt --script "bash --version"
+require: tmt-provision-virtual
