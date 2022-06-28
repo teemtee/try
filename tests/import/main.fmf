@@ -1,0 +1,4 @@
+summary: Concise summary describing what the test does
+test: ./test.sh
+framework: beakerlib
+require: library(distribution/mcase)

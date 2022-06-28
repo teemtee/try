@@ -1,0 +1,924 @@
+10:27:59 /var/tmp/tmt/run-124
+10:27:59 tmt version: running from the source
+10:27:59 Read file '/var/tmp/tmt/run-124/run.yaml'.
+10:27:59 Run data not found.
+10:27:59 Enabled steps: discover, execute, provision, finish, report and prepare
+10:27:59 Sync the worktree to '/var/tmp/tmt/run-124/plans/local/tree'.
+10:27:59 Run command 'rsync -ar --exclude .git /home/psss/git/try/ /var/tmp/tmt/run-124/plans/local/tree'.
+10:27:59 environment: None
+10:27:59 Create the data directory '/var/tmp/tmt/run-124/plans/local/data'.
+10:27:59 Found 1 plan.
+10:27:59 Write file '/var/tmp/tmt/run-124/run.yaml'.
+10:27:59 
+10:27:59 /plans/local
+10:27:59 info
+10:27:59 environment: {'TMT_PLAN_DATA': '/var/tmp/tmt/run-124/plans/local/data'}
+10:27:59 context: {}
+10:27:59 wake
+10:27:59 discover
+10:27:59     Read file '/var/tmp/tmt/run-124/plans/local/discover/step.yaml'.
+10:27:59     Step data not found.
+10:27:59     Read file '/var/tmp/tmt/run-124/plans/local/discover/tests.yaml'.
+10:27:59     Discovered tests not found.
+10:27:59     Using the 'DiscoverFmf' plugin for the 'fmf' method.
+10:27:59     status: todo
+10:27:59     Write file '/var/tmp/tmt/run-124/plans/local/discover/step.yaml'.
+10:27:59     Write file '/var/tmp/tmt/run-124/plans/local/discover/tests.yaml'.
+10:27:59 provision
+10:27:59     Read file '/var/tmp/tmt/run-124/plans/local/provision/step.yaml'.
+10:27:59     Step data not found.
+10:27:59     Read file '/var/tmp/tmt/run-124/plans/local/provision/guests.yaml'.
+10:27:59     Provisioned guests not found.
+10:27:59     Using the 'ProvisionLocal' plugin for the 'local' method.
+10:27:59     status: todo
+10:27:59     Write file '/var/tmp/tmt/run-124/plans/local/provision/step.yaml'.
+10:27:59     Write file '/var/tmp/tmt/run-124/plans/local/provision/guests.yaml'.
+10:27:59 prepare
+10:27:59     Read file '/var/tmp/tmt/run-124/plans/local/prepare/step.yaml'.
+10:27:59     Step data not found.
+10:27:59     Using the 'PrepareShell' plugin for the 'shell' method.
+10:27:59     status: todo
+10:27:59     Write file '/var/tmp/tmt/run-124/plans/local/prepare/step.yaml'.
+10:27:59 execute
+10:27:59     Read file '/var/tmp/tmt/run-124/plans/local/execute/step.yaml'.
+10:27:59     Step data not found.
+10:27:59     Read file '/var/tmp/tmt/run-124/plans/local/execute/results.yaml'.
+10:27:59     Test results not found.
+10:27:59     Using the 'ExecuteInternal' plugin for the 'tmt' method.
+10:27:59     status: todo
+10:27:59     Write file '/var/tmp/tmt/run-124/plans/local/execute/step.yaml'.
+10:27:59     Write file '/var/tmp/tmt/run-124/plans/local/execute/results.yaml'.
+10:27:59 report
+10:27:59     Read file '/var/tmp/tmt/run-124/plans/local/report/step.yaml'.
+10:27:59     Step data not found.
+10:27:59     Report step always force mode enabled.
+10:27:59     Clean up workdir '/var/tmp/tmt/run-124/plans/local/report'.
+10:27:59     status: todo
+10:27:59     Using the 'ReportDisplay' plugin for the 'display' method.
+10:27:59     Write file '/var/tmp/tmt/run-124/plans/local/report/step.yaml'.
+10:27:59 finish
+10:27:59     Read file '/var/tmp/tmt/run-124/plans/local/finish/step.yaml'.
+10:27:59     Step data not found.
+10:27:59     Using the 'FinishShell' plugin for the 'shell' method.
+10:27:59     status: todo
+10:27:59     Write file '/var/tmp/tmt/run-124/plans/local/finish/step.yaml'.
+10:27:59 action
+10:27:59 go
+10:27:59     discover
+10:27:59     workdir: /var/tmp/tmt/run-124/plans/local/discover
+10:27:59         how: fmf
+10:27:59         order: 50
+10:27:59         Run command 'git rev-parse --show-toplevel'.
+10:27:59         environment: None
+10:27:59         out: /home/psss/git/try
+10:27:59         directory: /home/psss/git/try
+10:27:59         Copy '/home/psss/git/try' to '/var/tmp/tmt/run-124/plans/local/discover/default/tests'.
+10:28:00         Run command 'git rev-parse --short HEAD'.
+10:28:00         environment: None
+10:28:00         out: 6fbc2e7
+10:28:00         hash: 6fbc2e7
+10:28:00         Check metadata tree in '/var/tmp/tmt/run-124/plans/local/discover/default/tests/'.
+10:28:00         Detected library 'library(distribution/mcase)'.
+10:28:00         Fetch library 'distribution/mcase'.
+10:28:00         Run command 'git clone --depth=1 https://github.com/beakerlib/distribution /var/tmp/tmt/run-124/plans/local/discover/default/libs/distribution'.
+10:28:00         environment: 
+            {'BASH_FUNC_which%%': '() {  ( alias;\n'
+                                  ' eval ${which_declare} ) | /usr/bin/which --tty-only '
+                                  '--read-alias --read-functions --show-tilde --show-dot '
+                                  '"$@"\n'
+                                  '}',
+             'COLORTERM': 'truecolor',
+             'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/12559/bus',
+             'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/ ',
+             'DESKTOP_SESSION': 'gnome-xorg',
+             'DISPLAY': ':0',
+             'EDITOR': 'vim',
+             'GDMSESSION': 'gnome-xorg',
+             'GDM_LANG': 'cs_CZ.UTF-8',
+             'GIT_ASKPASS': 'echo',
+             'GIT_PS1_SHOWDIRTYSTATE': 'true',
+             'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4a31999_59f0_4109_a73e_67c7af9e7562',
+             'GNOME_TERMINAL_SERVICE': ':1.75',
+             'GUESTFISH_INIT': '\\e[1;34m',
+             'GUESTFISH_OUTPUT': '\\e[0m',
+             'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+             'GUESTFISH_RESTORE': '\\e[0m',
+             'HISTCONTROL': 'ignoreboth',
+             'HISTSIZE': '10000',
+             'HOME': '/home/psss',
+             'HOSTNAME': 'fedora',
+             'LANG': 'cs_CZ.UTF-8',
+             'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+             'LOGNAME': 'psss',
+             'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:',
+             'MAIL': '/var/spool/mail/psss',
+             'MOZ_GMP_PATH': '/usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed',
+             'OLDPWD': '/tmp/library',
+             'PATH': '/home/psss/.virtualenvs/tmt/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/psss/.local/bin:/home/psss/bin',
+             'PS1': '(tmt) \\u@\\h:\\w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " '
+                    '(%s)")> ',
+             'PWD': '/home/psss/git/try',
+             'PYTHONDONTWRITEBYTECODE': '1',
+             'PYTHONIOENCODING': 'utf-8:surrogateescape',
+             'PYTHONSTARTUP': '/home/psss/.pythonrc.py',
+             'QT_IM_MODULE': 'ibus',
+             'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2288,unix/unix:/tmp/.ICE-unix/2288',
+             'SHELL': '/bin/bash',
+             'SHLVL': '1',
+             'SSH_AGENT_PID': '2228',
+             'SSH_AUTH_SOCK': '/run/user/12559/keyring/ssh',
+             'SYSTEMD_EXEC_PID': '2532',
+             'TERM': 'xterm-256color',
+             'TMT_PLUGINS': '/home/psss/git/lab/tmt/provision',
+             'USER': 'psss',
+             'USERNAME': 'psss',
+             'VIRTUALENVWRAPPER_HOOK_DIR': '/home/psss/.virtualenvs',
+             'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project',
+             'VIRTUALENVWRAPPER_SCRIPT': '/usr/bin/virtualenvwrapper.sh',
+             'VIRTUALENVWRAPPER_WORKON_CD': '1',
+             'VIRTUAL_ENV': '/home/psss/.virtualenvs/tmt',
+             'VTE_VERSION': '6602',
+             'WINDOWPATH': '2',
+             'WORKON_HOME': '/home/psss/.virtualenvs',
+             'XAUTHORITY': '/run/user/12559/gdm/Xauthority',
+             'XDG_CURRENT_DESKTOP': 'GNOME',
+             'XDG_DATA_DIRS': '/home/psss/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/',
+             'XDG_MENU_PREFIX': 'gnome-',
+             'XDG_RUNTIME_DIR': '/run/user/12559',
+             'XDG_SESSION_CLASS': 'user',
+             'XDG_SESSION_DESKTOP': 'gnome-xorg',
+             'XDG_SESSION_TYPE': 'x11',
+             'XMODIFIERS': '@im=ibus',
+             '_': '/home/psss/.virtualenvs/tmt/bin/tmt',
+             '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv '
+                                       'showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv mkvirtualenv rmvirtualenv '
+                                       'lsvirtualenv showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv',
+             'which_declare': 'declare -f'}
+10:28:00         err: Cloning into '/var/tmp/tmt/run-124/plans/local/discover/default/libs/distribution'...
+10:28:00         Run command 'git checkout master'.
+10:28:00         environment: None
+10:28:00         err: Already on 'master'
+10:28:00         out: Your branch is up to date with 'origin/master'.
+10:28:00         Detected library 'library(ControlFlow/mcase)'.
+10:28:00         Fetch library 'ControlFlow/mcase'.
+10:28:00         Run command 'git clone --depth=1 https://github.com/beakerlib/ControlFlow /var/tmp/tmt/run-124/plans/local/discover/default/libs/ControlFlow'.
+10:28:00         environment: 
+            {'BASH_FUNC_which%%': '() {  ( alias;\n'
+                                  ' eval ${which_declare} ) | /usr/bin/which --tty-only '
+                                  '--read-alias --read-functions --show-tilde --show-dot '
+                                  '"$@"\n'
+                                  '}',
+             'COLORTERM': 'truecolor',
+             'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/12559/bus',
+             'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/ ',
+             'DESKTOP_SESSION': 'gnome-xorg',
+             'DISPLAY': ':0',
+             'EDITOR': 'vim',
+             'GDMSESSION': 'gnome-xorg',
+             'GDM_LANG': 'cs_CZ.UTF-8',
+             'GIT_ASKPASS': 'echo',
+             'GIT_PS1_SHOWDIRTYSTATE': 'true',
+             'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4a31999_59f0_4109_a73e_67c7af9e7562',
+             'GNOME_TERMINAL_SERVICE': ':1.75',
+             'GUESTFISH_INIT': '\\e[1;34m',
+             'GUESTFISH_OUTPUT': '\\e[0m',
+             'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+             'GUESTFISH_RESTORE': '\\e[0m',
+             'HISTCONTROL': 'ignoreboth',
+             'HISTSIZE': '10000',
+             'HOME': '/home/psss',
+             'HOSTNAME': 'fedora',
+             'LANG': 'cs_CZ.UTF-8',
+             'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+             'LOGNAME': 'psss',
+             'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:',
+             'MAIL': '/var/spool/mail/psss',
+             'MOZ_GMP_PATH': '/usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed',
+             'OLDPWD': '/tmp/library',
+             'PATH': '/home/psss/.virtualenvs/tmt/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/psss/.local/bin:/home/psss/bin',
+             'PS1': '(tmt) \\u@\\h:\\w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " '
+                    '(%s)")> ',
+             'PWD': '/home/psss/git/try',
+             'PYTHONDONTWRITEBYTECODE': '1',
+             'PYTHONIOENCODING': 'utf-8:surrogateescape',
+             'PYTHONSTARTUP': '/home/psss/.pythonrc.py',
+             'QT_IM_MODULE': 'ibus',
+             'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2288,unix/unix:/tmp/.ICE-unix/2288',
+             'SHELL': '/bin/bash',
+             'SHLVL': '1',
+             'SSH_AGENT_PID': '2228',
+             'SSH_AUTH_SOCK': '/run/user/12559/keyring/ssh',
+             'SYSTEMD_EXEC_PID': '2532',
+             'TERM': 'xterm-256color',
+             'TMT_PLUGINS': '/home/psss/git/lab/tmt/provision',
+             'USER': 'psss',
+             'USERNAME': 'psss',
+             'VIRTUALENVWRAPPER_HOOK_DIR': '/home/psss/.virtualenvs',
+             'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project',
+             'VIRTUALENVWRAPPER_SCRIPT': '/usr/bin/virtualenvwrapper.sh',
+             'VIRTUALENVWRAPPER_WORKON_CD': '1',
+             'VIRTUAL_ENV': '/home/psss/.virtualenvs/tmt',
+             'VTE_VERSION': '6602',
+             'WINDOWPATH': '2',
+             'WORKON_HOME': '/home/psss/.virtualenvs',
+             'XAUTHORITY': '/run/user/12559/gdm/Xauthority',
+             'XDG_CURRENT_DESKTOP': 'GNOME',
+             'XDG_DATA_DIRS': '/home/psss/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/',
+             'XDG_MENU_PREFIX': 'gnome-',
+             'XDG_RUNTIME_DIR': '/run/user/12559',
+             'XDG_SESSION_CLASS': 'user',
+             'XDG_SESSION_DESKTOP': 'gnome-xorg',
+             'XDG_SESSION_TYPE': 'x11',
+             'XMODIFIERS': '@im=ibus',
+             '_': '/home/psss/.virtualenvs/tmt/bin/tmt',
+             '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv '
+                                       'showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv mkvirtualenv rmvirtualenv '
+                                       'lsvirtualenv showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv',
+             'which_declare': 'declare -f'}
+10:28:00         err: Cloning into '/var/tmp/tmt/run-124/plans/local/discover/default/libs/ControlFlow'...
+10:28:01         Run command 'git checkout master'.
+10:28:01         environment: None
+10:28:01         err: Already on 'master'
+10:28:01         out: Your branch is up to date with 'origin/master'.
+10:28:01         summary: 1 test selected
+10:28:01             /tests/import
+10:28:01     status: done
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/discover/step.yaml'.
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/discover/tests.yaml'.
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/discover/run.yaml'.
+10:28:01     provision
+10:28:01     workdir: /var/tmp/tmt/run-124/plans/local/provision
+10:28:01         how: local
+10:28:01         order: 50
+10:28:01         Run command 'cat /etc/os-release'.
+10:28:01         environment: 
+            {'BASH_FUNC_which%%': '() {  ( alias;\n'
+                                  ' eval ${which_declare} ) | /usr/bin/which --tty-only '
+                                  '--read-alias --read-functions --show-tilde --show-dot '
+                                  '"$@"\n'
+                                  '}',
+             'COLORTERM': 'truecolor',
+             'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/12559/bus',
+             'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/ ',
+             'DESKTOP_SESSION': 'gnome-xorg',
+             'DISPLAY': ':0',
+             'EDITOR': 'vim',
+             'GDMSESSION': 'gnome-xorg',
+             'GDM_LANG': 'cs_CZ.UTF-8',
+             'GIT_PS1_SHOWDIRTYSTATE': 'true',
+             'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4a31999_59f0_4109_a73e_67c7af9e7562',
+             'GNOME_TERMINAL_SERVICE': ':1.75',
+             'GUESTFISH_INIT': '\\e[1;34m',
+             'GUESTFISH_OUTPUT': '\\e[0m',
+             'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+             'GUESTFISH_RESTORE': '\\e[0m',
+             'HISTCONTROL': 'ignoreboth',
+             'HISTSIZE': '10000',
+             'HOME': '/home/psss',
+             'HOSTNAME': 'fedora',
+             'LANG': 'cs_CZ.UTF-8',
+             'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+             'LOGNAME': 'psss',
+             'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:',
+             'MAIL': '/var/spool/mail/psss',
+             'MOZ_GMP_PATH': '/usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed',
+             'OLDPWD': '/tmp/library',
+             'PATH': '/home/psss/.virtualenvs/tmt/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/psss/.local/bin:/home/psss/bin',
+             'PS1': '(tmt) \\u@\\h:\\w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " '
+                    '(%s)")> ',
+             'PWD': '/home/psss/git/try',
+             'PYTHONDONTWRITEBYTECODE': '1',
+             'PYTHONIOENCODING': 'utf-8:surrogateescape',
+             'PYTHONSTARTUP': '/home/psss/.pythonrc.py',
+             'QT_IM_MODULE': 'ibus',
+             'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2288,unix/unix:/tmp/.ICE-unix/2288',
+             'SHELL': '/bin/bash',
+             'SHLVL': '1',
+             'SSH_AGENT_PID': '2228',
+             'SSH_AUTH_SOCK': '/run/user/12559/keyring/ssh',
+             'SYSTEMD_EXEC_PID': '2532',
+             'TERM': 'xterm-256color',
+             'TMT_PLAN_DATA': '/var/tmp/tmt/run-124/plans/local/data',
+             'TMT_PLUGINS': '/home/psss/git/lab/tmt/provision',
+             'USER': 'psss',
+             'USERNAME': 'psss',
+             'VIRTUALENVWRAPPER_HOOK_DIR': '/home/psss/.virtualenvs',
+             'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project',
+             'VIRTUALENVWRAPPER_SCRIPT': '/usr/bin/virtualenvwrapper.sh',
+             'VIRTUALENVWRAPPER_WORKON_CD': '1',
+             'VIRTUAL_ENV': '/home/psss/.virtualenvs/tmt',
+             'VTE_VERSION': '6602',
+             'WINDOWPATH': '2',
+             'WORKON_HOME': '/home/psss/.virtualenvs',
+             'XAUTHORITY': '/run/user/12559/gdm/Xauthority',
+             'XDG_CURRENT_DESKTOP': 'GNOME',
+             'XDG_DATA_DIRS': '/home/psss/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/',
+             'XDG_MENU_PREFIX': 'gnome-',
+             'XDG_RUNTIME_DIR': '/run/user/12559',
+             'XDG_SESSION_CLASS': 'user',
+             'XDG_SESSION_DESKTOP': 'gnome-xorg',
+             'XDG_SESSION_TYPE': 'x11',
+             'XMODIFIERS': '@im=ibus',
+             '_': '/home/psss/.virtualenvs/tmt/bin/tmt',
+             '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv '
+                                       'showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv mkvirtualenv rmvirtualenv '
+                                       'lsvirtualenv showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv',
+             'which_declare': 'declare -f'}
+10:28:01         out: NAME="Fedora Linux"
+10:28:01         out: VERSION="35 (Workstation Edition)"
+10:28:01         out: ID=fedora
+10:28:01         out: VERSION_ID=35
+10:28:01         out: VERSION_CODENAME=""
+10:28:01         out: PLATFORM_ID="platform:f35"
+10:28:01         out: PRETTY_NAME="Fedora Linux 35 (Workstation Edition)"
+10:28:01         out: ANSI_COLOR="0;38;2;60;110;180"
+10:28:01         out: LOGO=fedora-logo-icon
+10:28:01         out: CPE_NAME="cpe:/o:fedoraproject:fedora:35"
+10:28:01         out: HOME_URL="https://fedoraproject.org/"
+10:28:01         out: DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/f35/system-administrators-guide/"
+10:28:01         out: SUPPORT_URL="https://ask.fedoraproject.org/"
+10:28:01         out: BUG_REPORT_URL="https://bugzilla.redhat.com/"
+10:28:01         out: REDHAT_BUGZILLA_PRODUCT="Fedora"
+10:28:01         out: REDHAT_BUGZILLA_PRODUCT_VERSION=35
+10:28:01         out: REDHAT_SUPPORT_PRODUCT="Fedora"
+10:28:01         out: REDHAT_SUPPORT_PRODUCT_VERSION=35
+10:28:01         out: PRIVACY_POLICY_URL="https://fedoraproject.org/wiki/Legal:PrivacyPolicy"
+10:28:01         out: VARIANT="Workstation Edition"
+10:28:01         out: VARIANT_ID=workstation
+10:28:01         distro: Fedora Linux 35 (Workstation Edition)
+10:28:01         Run command 'uname -r'.
+10:28:01         environment: 
+            {'BASH_FUNC_which%%': '() {  ( alias;\n'
+                                  ' eval ${which_declare} ) | /usr/bin/which --tty-only '
+                                  '--read-alias --read-functions --show-tilde --show-dot '
+                                  '"$@"\n'
+                                  '}',
+             'COLORTERM': 'truecolor',
+             'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/12559/bus',
+             'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/ ',
+             'DESKTOP_SESSION': 'gnome-xorg',
+             'DISPLAY': ':0',
+             'EDITOR': 'vim',
+             'GDMSESSION': 'gnome-xorg',
+             'GDM_LANG': 'cs_CZ.UTF-8',
+             'GIT_PS1_SHOWDIRTYSTATE': 'true',
+             'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4a31999_59f0_4109_a73e_67c7af9e7562',
+             'GNOME_TERMINAL_SERVICE': ':1.75',
+             'GUESTFISH_INIT': '\\e[1;34m',
+             'GUESTFISH_OUTPUT': '\\e[0m',
+             'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+             'GUESTFISH_RESTORE': '\\e[0m',
+             'HISTCONTROL': 'ignoreboth',
+             'HISTSIZE': '10000',
+             'HOME': '/home/psss',
+             'HOSTNAME': 'fedora',
+             'LANG': 'cs_CZ.UTF-8',
+             'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+             'LOGNAME': 'psss',
+             'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:',
+             'MAIL': '/var/spool/mail/psss',
+             'MOZ_GMP_PATH': '/usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed',
+             'OLDPWD': '/tmp/library',
+             'PATH': '/home/psss/.virtualenvs/tmt/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/psss/.local/bin:/home/psss/bin',
+             'PS1': '(tmt) \\u@\\h:\\w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " '
+                    '(%s)")> ',
+             'PWD': '/home/psss/git/try',
+             'PYTHONDONTWRITEBYTECODE': '1',
+             'PYTHONIOENCODING': 'utf-8:surrogateescape',
+             'PYTHONSTARTUP': '/home/psss/.pythonrc.py',
+             'QT_IM_MODULE': 'ibus',
+             'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2288,unix/unix:/tmp/.ICE-unix/2288',
+             'SHELL': '/bin/bash',
+             'SHLVL': '1',
+             'SSH_AGENT_PID': '2228',
+             'SSH_AUTH_SOCK': '/run/user/12559/keyring/ssh',
+             'SYSTEMD_EXEC_PID': '2532',
+             'TERM': 'xterm-256color',
+             'TMT_PLAN_DATA': '/var/tmp/tmt/run-124/plans/local/data',
+             'TMT_PLUGINS': '/home/psss/git/lab/tmt/provision',
+             'USER': 'psss',
+             'USERNAME': 'psss',
+             'VIRTUALENVWRAPPER_HOOK_DIR': '/home/psss/.virtualenvs',
+             'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project',
+             'VIRTUALENVWRAPPER_SCRIPT': '/usr/bin/virtualenvwrapper.sh',
+             'VIRTUALENVWRAPPER_WORKON_CD': '1',
+             'VIRTUAL_ENV': '/home/psss/.virtualenvs/tmt',
+             'VTE_VERSION': '6602',
+             'WINDOWPATH': '2',
+             'WORKON_HOME': '/home/psss/.virtualenvs',
+             'XAUTHORITY': '/run/user/12559/gdm/Xauthority',
+             'XDG_CURRENT_DESKTOP': 'GNOME',
+             'XDG_DATA_DIRS': '/home/psss/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/',
+             'XDG_MENU_PREFIX': 'gnome-',
+             'XDG_RUNTIME_DIR': '/run/user/12559',
+             'XDG_SESSION_CLASS': 'user',
+             'XDG_SESSION_DESKTOP': 'gnome-xorg',
+             'XDG_SESSION_TYPE': 'x11',
+             'XMODIFIERS': '@im=ibus',
+             '_': '/home/psss/.virtualenvs/tmt/bin/tmt',
+             '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv '
+                                       'showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv mkvirtualenv rmvirtualenv '
+                                       'lsvirtualenv showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv',
+             'which_declare': 'declare -f'}
+10:28:01         out: 5.17.11-200.fc35.x86_64
+10:28:01         kernel: 5.17.11-200.fc35.x86_64
+10:28:01         summary: 1 guest provisioned
+10:28:01     status: done
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/provision/step.yaml'.
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/provision/guests.yaml'.
+10:28:01     prepare
+10:28:01     workdir: /var/tmp/tmt/run-124/plans/local/prepare
+10:28:01     Using the 'PrepareInstall' plugin for the 'install' method.
+10:28:01         how: install
+10:28:01         summary: Install required packages
+10:28:01         name: requires
+10:28:01         order: 70
+10:28:01         Check if sudo is necessary.
+10:28:01         Run command 'whoami'.
+10:28:01         environment: 
+            {'BASH_FUNC_which%%': '() {  ( alias;\n'
+                                  ' eval ${which_declare} ) | /usr/bin/which --tty-only '
+                                  '--read-alias --read-functions --show-tilde --show-dot '
+                                  '"$@"\n'
+                                  '}',
+             'COLORTERM': 'truecolor',
+             'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/12559/bus',
+             'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/ ',
+             'DESKTOP_SESSION': 'gnome-xorg',
+             'DISPLAY': ':0',
+             'EDITOR': 'vim',
+             'GDMSESSION': 'gnome-xorg',
+             'GDM_LANG': 'cs_CZ.UTF-8',
+             'GIT_PS1_SHOWDIRTYSTATE': 'true',
+             'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4a31999_59f0_4109_a73e_67c7af9e7562',
+             'GNOME_TERMINAL_SERVICE': ':1.75',
+             'GUESTFISH_INIT': '\\e[1;34m',
+             'GUESTFISH_OUTPUT': '\\e[0m',
+             'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+             'GUESTFISH_RESTORE': '\\e[0m',
+             'HISTCONTROL': 'ignoreboth',
+             'HISTSIZE': '10000',
+             'HOME': '/home/psss',
+             'HOSTNAME': 'fedora',
+             'LANG': 'cs_CZ.UTF-8',
+             'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+             'LOGNAME': 'psss',
+             'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:',
+             'MAIL': '/var/spool/mail/psss',
+             'MOZ_GMP_PATH': '/usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed',
+             'OLDPWD': '/tmp/library',
+             'PATH': '/home/psss/.virtualenvs/tmt/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/psss/.local/bin:/home/psss/bin',
+             'PS1': '(tmt) \\u@\\h:\\w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " '
+                    '(%s)")> ',
+             'PWD': '/home/psss/git/try',
+             'PYTHONDONTWRITEBYTECODE': '1',
+             'PYTHONIOENCODING': 'utf-8:surrogateescape',
+             'PYTHONSTARTUP': '/home/psss/.pythonrc.py',
+             'QT_IM_MODULE': 'ibus',
+             'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2288,unix/unix:/tmp/.ICE-unix/2288',
+             'SHELL': '/bin/bash',
+             'SHLVL': '1',
+             'SSH_AGENT_PID': '2228',
+             'SSH_AUTH_SOCK': '/run/user/12559/keyring/ssh',
+             'SYSTEMD_EXEC_PID': '2532',
+             'TERM': 'xterm-256color',
+             'TMT_PLAN_DATA': '/var/tmp/tmt/run-124/plans/local/data',
+             'TMT_PLUGINS': '/home/psss/git/lab/tmt/provision',
+             'USER': 'psss',
+             'USERNAME': 'psss',
+             'VIRTUALENVWRAPPER_HOOK_DIR': '/home/psss/.virtualenvs',
+             'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project',
+             'VIRTUALENVWRAPPER_SCRIPT': '/usr/bin/virtualenvwrapper.sh',
+             'VIRTUALENVWRAPPER_WORKON_CD': '1',
+             'VIRTUAL_ENV': '/home/psss/.virtualenvs/tmt',
+             'VTE_VERSION': '6602',
+             'WINDOWPATH': '2',
+             'WORKON_HOME': '/home/psss/.virtualenvs',
+             'XAUTHORITY': '/run/user/12559/gdm/Xauthority',
+             'XDG_CURRENT_DESKTOP': 'GNOME',
+             'XDG_DATA_DIRS': '/home/psss/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/',
+             'XDG_MENU_PREFIX': 'gnome-',
+             'XDG_RUNTIME_DIR': '/run/user/12559',
+             'XDG_SESSION_CLASS': 'user',
+             'XDG_SESSION_DESKTOP': 'gnome-xorg',
+             'XDG_SESSION_TYPE': 'x11',
+             'XMODIFIERS': '@im=ibus',
+             '_': '/home/psss/.virtualenvs/tmt/bin/tmt',
+             '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv '
+                                       'showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv mkvirtualenv rmvirtualenv '
+                                       'lsvirtualenv showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv',
+             'which_declare': 'declare -f'}
+10:28:01         out: psss
+10:28:01         Check if dnf is available.
+10:28:01         Run command 'rpm -q dnf'.
+10:28:01         environment: 
+            {'BASH_FUNC_which%%': '() {  ( alias;\n'
+                                  ' eval ${which_declare} ) | /usr/bin/which --tty-only '
+                                  '--read-alias --read-functions --show-tilde --show-dot '
+                                  '"$@"\n'
+                                  '}',
+             'COLORTERM': 'truecolor',
+             'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/12559/bus',
+             'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/ ',
+             'DESKTOP_SESSION': 'gnome-xorg',
+             'DISPLAY': ':0',
+             'EDITOR': 'vim',
+             'GDMSESSION': 'gnome-xorg',
+             'GDM_LANG': 'cs_CZ.UTF-8',
+             'GIT_PS1_SHOWDIRTYSTATE': 'true',
+             'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4a31999_59f0_4109_a73e_67c7af9e7562',
+             'GNOME_TERMINAL_SERVICE': ':1.75',
+             'GUESTFISH_INIT': '\\e[1;34m',
+             'GUESTFISH_OUTPUT': '\\e[0m',
+             'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+             'GUESTFISH_RESTORE': '\\e[0m',
+             'HISTCONTROL': 'ignoreboth',
+             'HISTSIZE': '10000',
+             'HOME': '/home/psss',
+             'HOSTNAME': 'fedora',
+             'LANG': 'cs_CZ.UTF-8',
+             'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+             'LOGNAME': 'psss',
+             'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:',
+             'MAIL': '/var/spool/mail/psss',
+             'MOZ_GMP_PATH': '/usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed',
+             'OLDPWD': '/tmp/library',
+             'PATH': '/home/psss/.virtualenvs/tmt/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/psss/.local/bin:/home/psss/bin',
+             'PS1': '(tmt) \\u@\\h:\\w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " '
+                    '(%s)")> ',
+             'PWD': '/home/psss/git/try',
+             'PYTHONDONTWRITEBYTECODE': '1',
+             'PYTHONIOENCODING': 'utf-8:surrogateescape',
+             'PYTHONSTARTUP': '/home/psss/.pythonrc.py',
+             'QT_IM_MODULE': 'ibus',
+             'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2288,unix/unix:/tmp/.ICE-unix/2288',
+             'SHELL': '/bin/bash',
+             'SHLVL': '1',
+             'SSH_AGENT_PID': '2228',
+             'SSH_AUTH_SOCK': '/run/user/12559/keyring/ssh',
+             'SYSTEMD_EXEC_PID': '2532',
+             'TERM': 'xterm-256color',
+             'TMT_PLAN_DATA': '/var/tmp/tmt/run-124/plans/local/data',
+             'TMT_PLUGINS': '/home/psss/git/lab/tmt/provision',
+             'USER': 'psss',
+             'USERNAME': 'psss',
+             'VIRTUALENVWRAPPER_HOOK_DIR': '/home/psss/.virtualenvs',
+             'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project',
+             'VIRTUALENVWRAPPER_SCRIPT': '/usr/bin/virtualenvwrapper.sh',
+             'VIRTUALENVWRAPPER_WORKON_CD': '1',
+             'VIRTUAL_ENV': '/home/psss/.virtualenvs/tmt',
+             'VTE_VERSION': '6602',
+             'WINDOWPATH': '2',
+             'WORKON_HOME': '/home/psss/.virtualenvs',
+             'XAUTHORITY': '/run/user/12559/gdm/Xauthority',
+             'XDG_CURRENT_DESKTOP': 'GNOME',
+             'XDG_DATA_DIRS': '/home/psss/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/',
+             'XDG_MENU_PREFIX': 'gnome-',
+             'XDG_RUNTIME_DIR': '/run/user/12559',
+             'XDG_SESSION_CLASS': 'user',
+             'XDG_SESSION_DESKTOP': 'gnome-xorg',
+             'XDG_SESSION_TYPE': 'x11',
+             'XMODIFIERS': '@im=ibus',
+             '_': '/home/psss/.virtualenvs/tmt/bin/tmt',
+             '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv '
+                                       'showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv mkvirtualenv rmvirtualenv '
+                                       'lsvirtualenv showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv',
+             'which_declare': 'declare -f'}
+10:28:01         out: dnf-4.13.0-1.fc35.noarch
+10:28:01         Using 'sudo dnf' for all package operations.
+10:28:01         package: 3 packages requested
+10:28:01             beakerlib
+10:28:01             curl
+10:28:01             rpm
+10:28:01         Run command 'rpm -q --whatprovides "beakerlib" "curl" "rpm" || sudo dnf install -y "beakerlib" "curl" "rpm"'.
+10:28:01         environment: 
+            {'BASH_FUNC_which%%': '() {  ( alias;\n'
+                                  ' eval ${which_declare} ) | /usr/bin/which --tty-only '
+                                  '--read-alias --read-functions --show-tilde --show-dot '
+                                  '"$@"\n'
+                                  '}',
+             'COLORTERM': 'truecolor',
+             'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/12559/bus',
+             'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/ ',
+             'DESKTOP_SESSION': 'gnome-xorg',
+             'DISPLAY': ':0',
+             'EDITOR': 'vim',
+             'GDMSESSION': 'gnome-xorg',
+             'GDM_LANG': 'cs_CZ.UTF-8',
+             'GIT_PS1_SHOWDIRTYSTATE': 'true',
+             'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4a31999_59f0_4109_a73e_67c7af9e7562',
+             'GNOME_TERMINAL_SERVICE': ':1.75',
+             'GUESTFISH_INIT': '\\e[1;34m',
+             'GUESTFISH_OUTPUT': '\\e[0m',
+             'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+             'GUESTFISH_RESTORE': '\\e[0m',
+             'HISTCONTROL': 'ignoreboth',
+             'HISTSIZE': '10000',
+             'HOME': '/home/psss',
+             'HOSTNAME': 'fedora',
+             'LANG': 'cs_CZ.UTF-8',
+             'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+             'LOGNAME': 'psss',
+             'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:',
+             'MAIL': '/var/spool/mail/psss',
+             'MOZ_GMP_PATH': '/usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed',
+             'OLDPWD': '/tmp/library',
+             'PATH': '/home/psss/.virtualenvs/tmt/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/psss/.local/bin:/home/psss/bin',
+             'PS1': '(tmt) \\u@\\h:\\w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " '
+                    '(%s)")> ',
+             'PWD': '/home/psss/git/try',
+             'PYTHONDONTWRITEBYTECODE': '1',
+             'PYTHONIOENCODING': 'utf-8:surrogateescape',
+             'PYTHONSTARTUP': '/home/psss/.pythonrc.py',
+             'QT_IM_MODULE': 'ibus',
+             'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2288,unix/unix:/tmp/.ICE-unix/2288',
+             'SHELL': '/bin/bash',
+             'SHLVL': '1',
+             'SSH_AGENT_PID': '2228',
+             'SSH_AUTH_SOCK': '/run/user/12559/keyring/ssh',
+             'SYSTEMD_EXEC_PID': '2532',
+             'TERM': 'xterm-256color',
+             'TMT_PLAN_DATA': '/var/tmp/tmt/run-124/plans/local/data',
+             'TMT_PLUGINS': '/home/psss/git/lab/tmt/provision',
+             'USER': 'psss',
+             'USERNAME': 'psss',
+             'VIRTUALENVWRAPPER_HOOK_DIR': '/home/psss/.virtualenvs',
+             'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project',
+             'VIRTUALENVWRAPPER_SCRIPT': '/usr/bin/virtualenvwrapper.sh',
+             'VIRTUALENVWRAPPER_WORKON_CD': '1',
+             'VIRTUAL_ENV': '/home/psss/.virtualenvs/tmt',
+             'VTE_VERSION': '6602',
+             'WINDOWPATH': '2',
+             'WORKON_HOME': '/home/psss/.virtualenvs',
+             'XAUTHORITY': '/run/user/12559/gdm/Xauthority',
+             'XDG_CURRENT_DESKTOP': 'GNOME',
+             'XDG_DATA_DIRS': '/home/psss/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/',
+             'XDG_MENU_PREFIX': 'gnome-',
+             'XDG_RUNTIME_DIR': '/run/user/12559',
+             'XDG_SESSION_CLASS': 'user',
+             'XDG_SESSION_DESKTOP': 'gnome-xorg',
+             'XDG_SESSION_TYPE': 'x11',
+             'XMODIFIERS': '@im=ibus',
+             '_': '/home/psss/.virtualenvs/tmt/bin/tmt',
+             '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv '
+                                       'showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv mkvirtualenv rmvirtualenv '
+                                       'lsvirtualenv showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv',
+             'which_declare': 'declare -f'}
+10:28:01         out: beakerlib-1.28-1.fc35.noarch
+10:28:01         out: curl-7.79.1-4.fc35.x86_64
+10:28:01         out: rpm-4.17.0-4.fc35.x86_64
+10:28:01     
+10:28:01         summary: 1 preparation applied
+10:28:01     status: done
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/prepare/step.yaml'.
+10:28:01     execute
+10:28:01     workdir: /var/tmp/tmt/run-124/plans/local/execute
+10:28:01         how: tmt
+10:28:01         order: 50
+10:28:01         exit-first: False
+10:28:01         Write file '/var/tmp/tmt/run-124/plans/local/execute/data/tests/import/metadata.yaml'.
+10:28:01             test: Concise summary describing what the test does
+10:28:01         Execute '/tests/import' as a 'beakerlib' test.
+10:28:01         Use workdir '/var/tmp/tmt/run-124/plans/local/discover/default/tests/tests/import'.
+10:28:01         Run command './test.sh'.
+10:28:01         environment: 
+            {'BASH_FUNC_which%%': '() {  ( alias;\n'
+                                  ' eval ${which_declare} ) | /usr/bin/which --tty-only '
+                                  '--read-alias --read-functions --show-tilde --show-dot '
+                                  '"$@"\n'
+                                  '}',
+             'BEAKERLIB_COMMAND_SUBMIT_LOG': 'bash /usr/local/bin/tmt-file-submit',
+             'BEAKERLIB_DIR': '/var/tmp/tmt/run-124/plans/local/execute/data/tests/import',
+             'COLORTERM': 'truecolor',
+             'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/12559/bus',
+             'DEBUGINFOD_URLS': 'https://debuginfod.fedoraproject.org/ ',
+             'DESKTOP_SESSION': 'gnome-xorg',
+             'DISPLAY': ':0',
+             'EDITOR': 'vim',
+             'GDMSESSION': 'gnome-xorg',
+             'GDM_LANG': 'cs_CZ.UTF-8',
+             'GIT_PS1_SHOWDIRTYSTATE': 'true',
+             'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4a31999_59f0_4109_a73e_67c7af9e7562',
+             'GNOME_TERMINAL_SERVICE': ':1.75',
+             'GUESTFISH_INIT': '\\e[1;34m',
+             'GUESTFISH_OUTPUT': '\\e[0m',
+             'GUESTFISH_PS1': '\\[\\e[1;32m\\]><fs>\\[\\e[0;31m\\] ',
+             'GUESTFISH_RESTORE': '\\e[0m',
+             'HISTCONTROL': 'ignoreboth',
+             'HISTSIZE': '10000',
+             'HOME': '/home/psss',
+             'HOSTNAME': 'fedora',
+             'LANG': 'cs_CZ.UTF-8',
+             'LESSOPEN': '||/usr/bin/lesspipe.sh %s',
+             'LOGNAME': 'psss',
+             'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:',
+             'MAIL': '/var/spool/mail/psss',
+             'MOZ_GMP_PATH': '/usr/lib64/mozilla/plugins/gmp-gmpopenh264/system-installed',
+             'OLDPWD': '/tmp/library',
+             'PATH': '/home/psss/.virtualenvs/tmt/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/psss/.local/bin:/home/psss/bin',
+             'PS1': '(tmt) \\u@\\h:\\w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " '
+                    '(%s)")> ',
+             'PWD': '/home/psss/git/try',
+             'PYTHONDONTWRITEBYTECODE': '1',
+             'PYTHONIOENCODING': 'utf-8:surrogateescape',
+             'PYTHONSTARTUP': '/home/psss/.pythonrc.py',
+             'QT_IM_MODULE': 'ibus',
+             'REBOOTCOUNT': '0',
+             'RSTRNT_REBOOTCOUNT': '0',
+             'SESSION_MANAGER': 'local/unix:@/tmp/.ICE-unix/2288,unix/unix:/tmp/.ICE-unix/2288',
+             'SHELL': '/bin/bash',
+             'SHLVL': '1',
+             'SSH_AGENT_PID': '2228',
+             'SSH_AUTH_SOCK': '/run/user/12559/keyring/ssh',
+             'SYSTEMD_EXEC_PID': '2532',
+             'TERM': 'xterm-256color',
+             'TMT_PLAN_DATA': '/var/tmp/tmt/run-124/plans/local/data',
+             'TMT_PLUGINS': '/home/psss/git/lab/tmt/provision',
+             'TMT_REBOOT_COUNT': '0',
+             'TMT_REBOOT_REQUEST': '/var/tmp/tmt/run-124/plans/local/execute/data/tests/import/data/reboot_request',
+             'TMT_TEST_DATA': '/var/tmp/tmt/run-124/plans/local/execute/data/tests/import/data',
+             'TMT_TREE': '/var/tmp/tmt/run-124/plans/local/tree',
+             'USER': 'psss',
+             'USERNAME': 'psss',
+             'VIRTUALENVWRAPPER_HOOK_DIR': '/home/psss/.virtualenvs',
+             'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project',
+             'VIRTUALENVWRAPPER_SCRIPT': '/usr/bin/virtualenvwrapper.sh',
+             'VIRTUALENVWRAPPER_WORKON_CD': '1',
+             'VIRTUAL_ENV': '/home/psss/.virtualenvs/tmt',
+             'VTE_VERSION': '6602',
+             'WINDOWPATH': '2',
+             'WORKON_HOME': '/home/psss/.virtualenvs',
+             'XAUTHORITY': '/run/user/12559/gdm/Xauthority',
+             'XDG_CURRENT_DESKTOP': 'GNOME',
+             'XDG_DATA_DIRS': '/home/psss/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/',
+             'XDG_MENU_PREFIX': 'gnome-',
+             'XDG_RUNTIME_DIR': '/run/user/12559',
+             'XDG_SESSION_CLASS': 'user',
+             'XDG_SESSION_DESKTOP': 'gnome-xorg',
+             'XDG_SESSION_TYPE': 'x11',
+             'XMODIFIERS': '@im=ibus',
+             '_': '/home/psss/.virtualenvs/tmt/bin/tmt',
+             '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv '
+                                       'showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv mkvirtualenv rmvirtualenv '
+                                       'lsvirtualenv showvirtualenv workon add2virtualenv '
+                                       'cdsitepackages cdvirtualenv lssitepackages '
+                                       'toggleglobalsitepackages cpvirtualenv '
+                                       'setvirtualenvproject mkproject cdproject mktmpenv '
+                                       'wipeenv allvirtualenv',
+             'which_declare': 'declare -f'}
+10:28:01                 out: 
+10:28:01                 out: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+10:28:01                 out: ::   Test
+10:28:01                 out: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+10:28:01                 out: 
+10:28:01                 out: :: [ 12:28:01 ] :: [  BEGIN   ] :: Running 'rlImport distribution/mcase'
+10:28:01                 out: :: [ 12:28:01 ] :: [   INFO   ] :: rlImport: Found 'distribution/mcase', version '1' during upwards traversal
+10:28:01                 out: :: [ 12:28:01 ] :: [   INFO   ] :: rlImport: Will try to import distribution/mcase from /var/tmp/tmt/run-124/plans/local/discover/default/libs/distribution/mcase/lib.sh
+10:28:01                 out: :: [ 12:28:01 ] :: [   INFO   ] :: found dependencies: ' ControlFlow/mcase'
+10:28:01                 out: :: [ 12:28:01 ] :: [   INFO   ] :: rlImport: Found 'ControlFlow/mcase' during upwards traversal
+10:28:01                 out: :: [ 12:28:01 ] :: [   INFO   ] :: rlImport: Will try to import ControlFlow/mcase from /var/tmp/tmt/run-124/plans/local/discover/default/libs/ControlFlow/mcase/lib.sh
+10:28:01                 out: :: [ 12:28:01 ] :: [   INFO   ] :: found dependencies: ''
+10:28:01                 out: loading library distribution/mcase v1... done.
+10:28:01                 out: :: [ 12:28:01 ] :: [  BEGIN   ] :: Running 'rlImport ControlFlow/mcase'
+10:28:01                 out: :: [ 12:28:01 ] :: [   PASS   ] :: Command 'rlImport ControlFlow/mcase' (Expected 0, got 0)
+10:28:01                 out: :: [ 12:28:01 ] :: [   PASS   ] :: Command 'rlImport distribution/mcase' (Expected 0, got 0)
+10:28:01                 out: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+10:28:01                 out: ::   Duration: 0s
+10:28:01                 out: ::   Assertions: 2 good, 0 bad
+10:28:01                 out: ::   RESULT: PASS (Test)
+10:28:01                 out: 
+10:28:01                 out: 
+10:28:01                 out: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+10:28:01                 out: ::   
+10:28:01                 out: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+10:28:01                 out: 
+10:28:01                 out: :: [ 12:28:01 ] :: [   LOG    ] :: JOURNAL XML: /var/tmp/tmt/run-124/plans/local/execute/data/tests/import/journal.xml
+10:28:01                 out: :: [ 12:28:01 ] :: [   LOG    ] :: JOURNAL TXT: /var/tmp/tmt/run-124/plans/local/execute/data/tests/import/journal.txt
+10:28:01                 out: ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+10:28:01                 out: ::   Duration: 0s
+10:28:01                 out: ::   Phases: 1 good, 0 bad
+10:28:01                 out: ::   OVERALL RESULT: PASS ()
+10:28:01                 out: 
+10:28:01         Append to file '/var/tmp/tmt/run-124/plans/local/execute/data/tests/import/output.txt'.
+10:28:01                 00:00:00 /tests/import [1/1]
+10:28:01         Check result of '/tests/import'.
+10:28:01         Read file '/var/tmp/tmt/run-124/plans/local/execute/data/tests/import/TestResults'.
+10:28:01         Pull the plan data directory.
+10:28:01         summary: 1 test executed
+10:28:01     status: done
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/execute/step.yaml'.
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/execute/results.yaml'.
+10:28:01     report
+10:28:01     workdir: /var/tmp/tmt/run-124/plans/local/report
+10:28:01         how: display
+10:28:01         order: 50
+10:28:01             pass /tests/import
+10:28:01                 output.txt: /var/tmp/tmt/run-124/plans/local/execute/data/tests/import/output.txt
+10:28:01         Read file '/var/tmp/tmt/run-124/plans/local/execute/data/tests/import/output.txt'.
+10:28:01                 content: 
+                    
+                    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    ::   Test
+                    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    
+                    :: [ 12:28:01 ] :: [  BEGIN   ] :: Running 'rlImport distribution/mcase'
+                    :: [ 12:28:01 ] :: [   INFO   ] :: rlImport: Found 'distribution/mcase', version '1' during upwards traversal
+                    :: [ 12:28:01 ] :: [   INFO   ] :: rlImport: Will try to import distribution/mcase from /var/tmp/tmt/run-124/plans/local/discover/default/libs/distribution/mcase/lib.sh
+                    :: [ 12:28:01 ] :: [   INFO   ] :: found dependencies: ' ControlFlow/mcase'
+                    :: [ 12:28:01 ] :: [   INFO   ] :: rlImport: Found 'ControlFlow/mcase' during upwards traversal
+                    :: [ 12:28:01 ] :: [   INFO   ] :: rlImport: Will try to import ControlFlow/mcase from /var/tmp/tmt/run-124/plans/local/discover/default/libs/ControlFlow/mcase/lib.sh
+                    :: [ 12:28:01 ] :: [   INFO   ] :: found dependencies: ''
+                    loading library distribution/mcase v1... done.
+                    :: [ 12:28:01 ] :: [  BEGIN   ] :: Running 'rlImport ControlFlow/mcase'
+                    :: [ 12:28:01 ] :: [   PASS   ] :: Command 'rlImport ControlFlow/mcase' (Expected 0, got 0)
+                    :: [ 12:28:01 ] :: [   PASS   ] :: Command 'rlImport distribution/mcase' (Expected 0, got 0)
+                    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    ::   Duration: 0s
+                    ::   Assertions: 2 good, 0 bad
+                    ::   RESULT: PASS (Test)
+                    
+                    
+                    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    ::   
+                    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    
+                    :: [ 12:28:01 ] :: [   LOG    ] :: JOURNAL XML: /var/tmp/tmt/run-124/plans/local/execute/data/tests/import/journal.xml
+                    :: [ 12:28:01 ] :: [   LOG    ] :: JOURNAL TXT: /var/tmp/tmt/run-124/plans/local/execute/data/tests/import/journal.txt
+                    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    ::   Duration: 0s
+                    ::   Phases: 1 good, 0 bad
+                    ::   OVERALL RESULT: PASS ()
+                    
+10:28:01                 journal.txt: /var/tmp/tmt/run-124/plans/local/execute/data/tests/import/journal.txt
+10:28:01         summary: 1 test passed
+10:28:01     status: done
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/report/step.yaml'.
+10:28:01     finish
+10:28:01     workdir: /var/tmp/tmt/run-124/plans/local/finish
+10:28:01         Doing nothing to stop guest 'localhost'.
+10:28:01         Doing nothing to remove guest 'localhost'.
+10:28:01         summary: 0 tasks completed
+10:28:01     status: done
+10:28:01     Write file '/var/tmp/tmt/run-124/plans/local/finish/step.yaml'.
+10:28:01 
+10:28:01 total: 1 test passed
