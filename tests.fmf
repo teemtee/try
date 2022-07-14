@@ -1,0 +1,14 @@
+path: /
+
+/block_attributes:
+    summary: Changes parameters in group attribute and checks if change succeed
+    test: |
+        ./targetcli/setup/create_loopdev
+        ./targetcli/setup/create_block
+        ./targetcli/cli/block_attributes.py
+
+/fileio_attributes:
+    summary: Changes parameters in group attribute and checks if change succeed
+    test: |
+        ./targetcli/setup/create_fileio
+        ./targetcli/cli/fileio_attributes.py

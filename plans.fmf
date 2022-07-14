@@ -1,0 +1,28 @@
+/block_attributes:
+    summary:
+        Changes parameters in group attribute and checks if change succeed
+    prepare:
+        script:
+          - ./targetcli/setup/create_loopdev
+          - ./targetcli/setup/create_block
+    execute:
+        script: ./targetcli/cli/block_attributes.py
+
+
+/fileio_attributes:
+    summary:
+        Changes parameters in group attribute and checks if change succeed
+    prepare:
+        script:
+          - ./targetcli/setup/create_fileio
+    execute:
+        script: ./targetcli/cli/fileio_attributes.py
+
+/all:
+    summary: Run all discovered tests under a single plan
+    discover:
+        how: fmf
+    execute:
+        how: tmt
+
+
