@@ -1,4 +1,8 @@
 discover:
     how: fmf
+prepare:
+    how: install
+    copr: frantisekz/testcloud-wip
+    package: python3-testcloud
 execute:
     how: tmt
