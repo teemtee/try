@@ -3,6 +3,6 @@ discover:
 prepare:
     how: install
     copr: frantisekz/testcloud-wip
-    package: python3-testcloud
+    package: python3-testcloud-0.8.2
 execute:
     how: tmt
