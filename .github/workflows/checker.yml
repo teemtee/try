@@ -1,5 +1,6 @@
 on:
   pull_request:
+  merge_group:
 
 jobs:
   check_commit_message:
