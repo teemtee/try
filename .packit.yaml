@@ -1,0 +1,26 @@
+jobs:
+  - job: tests
+    trigger: pull_request
+    targets:
+    - fedora-latest-stable
+    skip_build: true
+    identifier: full
+    require:
+        label:
+            present:
+            - full
+    tf_extra_params:
+        test:
+            tmt:
+                name: /plans/second
+      
+  - job: tests
+    trigger: pull_request
+    targets:
+    - fedora-latest-stable
+    skip_build: true
+    identifier: simple
+    tf_extra_params:
+        test:
+            tmt:
+                name: /plans/first
