@@ -1,0 +1,4 @@
+summary: Test with hash sign in the name
+test: ./test.sh
+framework: beakerlib
+require: tmt
