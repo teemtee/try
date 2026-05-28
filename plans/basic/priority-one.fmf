@@ -1,0 +1,12 @@
+summary: Test priority one features
+discover:
+    how: fmf
+    filter: tier:1
+
+/aws:
+    environment:
+        CLOUD: AWS
+
+/gcp:
+    environment:
+        CLOUD: GCP

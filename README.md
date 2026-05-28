@@ -1,2 +1,3 @@
-# try
-Try &amp; experiment!
+# openshift
+
+A couple of OpenShift examples demonstrating usage.

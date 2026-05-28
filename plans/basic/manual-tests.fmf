@@ -1,0 +1,6 @@
+summary: Test plan with manual tests
+execute:
+    how: tmt
+discover:
+    how: fmf
+    filter: 'manual:true'

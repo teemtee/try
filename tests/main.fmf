@@ -1,0 +1,1 @@
+test: echo "Running $TMT_TEST_NAME on $CLOUD"

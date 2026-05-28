@@ -1,0 +1,60 @@
+# Name of the test case
+summary: Manual IPI install into AWS from Mac OSX System
+
+# Basic test case description
+description:
+    Install and destroy an OCP cluster by running installer on Mac OSX machine.
+
+# Marking this test case a manual one
+manual: true
+
+# Note: This is part of OpenShift Test Configuration Matrix,
+# section "Operation System Coverage Matrix for openshift-installer" with priority 1.
+# This file defines two tests for two Mac hosts defined in the matrix
+# Could contain more, but Polarion test case covered only Mac...
+# #### Operation System Coverage Matrix for openshift-installer 4.22
+#
+# | OS | Mac OS Sequoia (x86\_64) | Mac OS Tahoe (arm64) | Fedora 42 | RHEL 9.6 (x86\_64) | RHEL 9.6 (arm64) | RHEL 8.10 |
+# | ----- | ----- | ----- | ----- | :---- | :---- | :---- |
+# | **Priority** | P1 | P1 | P1 | P1 | P1 | P3 |
+
+tier: 1
+
+# for this test case, we care about from where we install
+# not that much to which platform we install
+# let's pick some usual one and optionally tag it here
+tag:
+    - ipi
+    - platform:AWS
+
+# Polarion test case did not specified details of installation. Let's say we can have two variants (tests)
+
+# definition of first test case
+# inherits attributes defined above
+/sequoia-x86_64:
+    summary+: " (Sequoia on Intel x86_64)"
+    # For manual test cases, test attribute should be name of existing md file describing the test
+    # There is prescribed format of that md file, with setup, test steps, expected results etc.
+    test: install-from-osx.md
+    # Adding additional tags for this test
+    tag+:
+        - 'installer_os:sequoia'
+        - 'installer_arch:x86_64'
+    link+:
+        # link to original Polarion test case
+        - relates: https://polarion.engineering.redhat.com/polarion/#/project/OSE/workitem?id=OCP-24403
+        # link to Jira Test Case Workitem that will store results for this manual test
+        - duplicated-by: https://stage-redhat.atlassian.net/browse/RHELTEST-3637
+
+# definition of second test case
+# inherits attributes defined above
+/tahoe-arm64:
+    summary+: " (Tahoe on Arm64)"
+    test: install-from-osx.md
+    # Adding additional tags for this test
+    tag+:
+        - 'installer_os:tahoe'
+        - 'installer_arch:arm64'
+    link+:
+        - relates: https://polarion.engineering.redhat.com/polarion/#/project/OSE/workitem?id=OCP-24689
+        - duplicated-by: https://stage-redhat.atlassian.net/browse/RHELTEST-3636

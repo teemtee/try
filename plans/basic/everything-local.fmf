@@ -1,0 +1,5 @@
+summary: Test plan with all locally defined tests
+execute:
+    how: tmt
+discover:
+    how: fmf

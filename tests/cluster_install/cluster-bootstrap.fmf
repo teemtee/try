@@ -1,0 +1,23 @@
+summary+: "cluster bootstrap"
+id: "cluster install:6ce515c7c732a322333427bf4f5508a5"
+extra-suite: "cluster install"
+tier: 1
+
+# trying to use somehow this existing metadata:
+# https://raw.githubusercontent.com/openshift-eng/ci-test-mapping/refs/heads/main/data/openshift-gce-devel/ci_analysis_us/component_mapping.json
+# {
+#     "APIVersion": "v1",
+#     "Kind": "TestOwnership",
+#     "ID": "cluster install:6ce515c7c732a322333427bf4f5508a5",
+#     "Name": "install should succeed: cluster bootstrap",
+#     "Suite": "cluster install",
+#     "Product": "OpenShift",
+#     "Priority": 0,
+#     "StaffApprovedObsolete": false,
+#     "Component": "Installer / openshift-installer",
+#     "Capabilities": [
+#       "Other"
+#     ],
+#     "JIRAComponent": "Installer / openshift-installer",
+#     "JIRAComponentID": "14798"
+#   },
