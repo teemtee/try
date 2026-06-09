@@ -1,0 +1,5 @@
+test: |
+    mkdir -p {one,two}/{some,thing,more}
+    tree
+require:
+    /usr/bin/tree

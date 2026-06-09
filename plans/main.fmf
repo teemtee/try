@@ -1,8 +1,0 @@
-execute:
-    how: tmt
-    script: echo
-
-/first:
-/second:
-
-
