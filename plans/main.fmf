@@ -1,8 +1,14 @@
+
+provision:
+    how: container
+    image: centos:stream9
+
+prepare:
+  - how: feature
+    epel: enabled
+  - how: install
+    package: fmf
+
 execute:
     how: tmt
-    script: echo
-
-/first:
-/second:
-
-
+    script: fmf --help
