@@ -1,0 +1,8 @@
+---
+- name: Ensure package is installed
+  hosts: all
+  tasks:
+    - name: Install the required package
+      ansible.builtin.package:
+        name: tmt
+        state: present

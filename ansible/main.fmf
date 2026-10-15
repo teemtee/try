@@ -1,0 +1,14 @@
+/plan:
+    discover:
+        how: fmf
+    provision:
+        how: container
+        image: fedora:fresh
+    prepare:
+        how: ansible
+        playbook: ansible/playbooks/tmt.yaml
+    execute:
+        how: tmt
+
+/test:
+    test: tmt --help
